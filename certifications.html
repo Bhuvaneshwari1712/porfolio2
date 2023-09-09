@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Certifications
+        </title>
+    </head>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  /* text-decoration: none; */
+}
+.button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+
+}
+input {
+  background-color:indianred; /* Green */
+  border: none;
+  color:black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button{
+  background-color: rgb(250, 230, 237); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  /* text-decoration: none; */
+  display: inline-block;
+  font-size: 16px;
+  display: inline-block;
+}
+.button a{
+  text-decoration: none;
+  color:black;
+}
+
+
+    </style>
+    <body>
+        <div style="text-align:center">
+            <h2>ONLINE COURSES</h2>
+        </div>
+        <div class="row">
+            <div class="column" onclick="openTab('a1');" style="background:cornflowerblue;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp_2Q5OIpLCxUE9oF_9rvPf7zNj4D61p5jMYP1rtdiAQ&s" alt="logo" width="100" height="100" /><br>
+                <button class="button"><a href="file:///C:/Users/Windows/Downloads/Bhuvaneshwari%20k%20(7).pdf">Great Learning</a></button>
+            </div>
+            <div class="column" onclick="openTab('a2');" style="background:rebeccapurple;">
+                <img src="https://seekvectorlogo.com/wp-content/uploads/2022/02/coursera-vector-logo-2022-small.png" alt="logo" width="100" height="100" /><br>
+                <button class="button"><a href="file:///C:/Users/Windows/Downloads/Bhuvaneshwari-COURSERA%20(1).pdf">Coursera</a></button>
+            </div>
+            <div class="column" onclick="openTab('a3');" style="background:fuchsia;">
+                <img src="https://gec.karnataka.gov.in/sksjti/public/uploads/media_to_upload1671811386.png" alt="logo" width="100" height="100" /><br>
+                <button class="button"><a href="file:///C:/Users/Windows/Downloads/BHUVANESHWARI_FULL%20STACK%20DEVELOPMENT_CERTIFICATE.PDF%20(1).pdf">Infosys</a></button>
+            </div>
+        </div>
+        <div id="a1" class="containerTab" style="display:none;background: cornflowerblue;">
+        <span onclick="this.parentElement.style.display='none' " class="clsobtn">&times;</span>
+        <h2>Great Learning</h2>
+        <p>
+            This free content marketing course begins by explaining what content marketing is and how it's beneficial to marketers to reach their target audience. You will also discover how content marketing and advertising are different from each other and how both of them have a specific purpose. It is a powerful visual representation of the idea that learning is an ongoing process and that knowledge can be acquired in a variety of ways.
+        </p>
+        </div>
+        <div id="a2" class="containerTab" style="display:none;background: rebeccapurple;">
+            <span onclick="this.parentElement.style.display='none' " class="clsobtn">&times;</span>
+            <h2>Coursera</h2>
+            <p>
+                This course is a partnership between the leading content marketing authority, Copyblogger, and UC Davis Continuing and Professional Education. In this course, you will learn the core strategies content marketers use to acquire and retain customers profitably. Specifically, you will learn how to develop, organize and implement a content marketing strategy, analyze and measure the effectiveness of content marketing.
+            </p>
+            </div>
+            <div id="a3" class="containerTab" style="display:none;background: fuchsia;">
+                <span onclick="this.parentElement.style.display='none' " class="clsobtn">&times;</span>
+                <h2>Infosys Springboard</h2>
+                <p>
+                    The future of India will be shaped by today’s younger generation who need quality education through digital literacy, making them productive and self-reliant citizens. 'Digital literacy' is the skills required to achieve digital competence and use of Information and Communication Technology (ICT) for work, leisure, learning and communication. It does not replace traditional forms of literacy, instead complements and amplifies the skills that form the foundation of traditional forms.
+                </p>
+                
+                </div>
+                <br>
+                <center>
+                    <div class="next">
+                        <button class="button"><a href="internships.html">Internships</a></button>
+                    </div>
+                </center>
+                <script>
+                    function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+                </script>
+            
+
+
+        
+    </body>
+</html>
